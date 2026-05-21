@@ -21,13 +21,22 @@ theme:
     - navigation.top
     - search.highlight
     - content.code.copy
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 nav:
 - Home: index.md
 - Control:
   - Overview: ./control/overview.md
   - "Kinematic Controller": ./control/kinematic-controller.md
-  - "Trajectory Generation & Following": ./control/trajectory-following-and-generation.md
+  - "Trajectory Generation": ./control/trajectory-generation.md
+  - "Trajectory Tracing": ./control/trajectory-tracing.md
 - Guidance: guidance.md
 - Perception: perception.md
 - Navigation: navigation.md
