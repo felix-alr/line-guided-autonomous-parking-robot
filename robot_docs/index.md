@@ -4,10 +4,24 @@ This project comprises multiple modules in order to achieve a functioning robot 
 Developed as part of the main seminar in automation and control technology at TU Dresden.
 
 ## Key Features
+The robot is able to
 
-<strong>Control:</strong><br>
-1. Line Follower
-- Position Controller
-- Trajectory Generation
-- Open-Loop Controller to follow trajectories
-- 
+- follow a path traced out by a line.
+- scan for parking spots and park in them.
+- get out of a parking spot when parked.
+
+Furthermore it can be controlled by means of an android application with a graphical user interface.
+
+## System Architecture
+
+
+The system consists of 5 modules that work together to realize the key features listed above.
+
+1. Guidance
+- Perception
+- Navigation
+- HMI
+- Control **(my work)**
+
+## Results
+You may view a video of the robot in action [on YouTube]().
