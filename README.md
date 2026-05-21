@@ -1,4 +1,27 @@
 # Line Guided Autonomous Parking Robot
-In this project, we created a robot that can follow a specific path traced out by lines which the robot can perceive through sensors.
-While following the line, it can scan its environment for parking spots and send that information to a tablet for the operator to see.
-The operator then select a parking spot which the robot will then enter.
+## Overview
+This project comprises multiple modules in order to achieve a functioning robot car that is able to navigate in a controlled manner as desired by the user.
+Developed as part of the main seminar in automation and control technology at TU Dresden.
+
+## Key Features
+The robot is able to
+
+- follow a path traced out by a line.
+- scan for parking spots and park in them.
+- get out of a parking spot when parked.
+
+Furthermore it can be controlled by means of an android application with a graphical user interface.
+
+## System Architecture
+
+
+The system consists of 5 modules that work together to realize the key features listed above.
+
+1. Guidance
+- Perception
+- Navigation
+- HMI
+- Control **(my work)**
+
+## Results
+You may view a video of the robot in action [on YouTube]().
