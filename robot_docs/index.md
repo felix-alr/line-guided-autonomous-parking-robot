@@ -12,8 +12,11 @@ The robot is able to
 
 Furthermore it can be controlled by means of an android application with a graphical user interface.
 
-## System Architecture
+## Results
+You may view a video of the robot in action [on YouTube]().
 
+## System Architecture
+![The image file could not be loaded.](./media/system-architecture.png)
 
 The system consists of 5 modules that work together to realize the key features listed above.
 
@@ -23,5 +26,26 @@ The system consists of 5 modules that work together to realize the key features 
 - [HMI](./hmi.md)
 - [Control **(my work)**](./control/overview.md)
 
-## Results
-You may view a video of the robot in action [on YouTube]().
+## Hardware
+![The image file could not be loaded](./media/hardware-structure.png)
+
+
+## Getting Started
+### Prerequisites
+
+- Python 3.10+
+- Pololu 3pi+ 2040 (including Bluetooth adapter for PC)
+- Optional: Android tablet for deployment of the HMI application
+
+### Installation
+```bash
+git clone https://github.com/felix-alr/line-guided-autonomous-parking-robot.git
+cd line-guided-autonomous-parking-robot
+```
+
+### Flash Pololu 3pi+ 2040
+**Ensure that ```mpremote```is installed using ```mpremote --version```. Else, install it using ```pip install mpremote```.
+Once installed you can continue flashing while in the ```robot_src``` folder by running the following command.
+```bash
+mpremote ...
+```
