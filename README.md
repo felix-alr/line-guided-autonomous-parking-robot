@@ -17,11 +17,11 @@ Furthermore it can be controlled by means of an android application with a graph
 
 The system consists of 5 modules that work together to realize the key features listed above.
 
-1. [Guidance](./guidance.md)
-- [Perception](./perception.md)
-- [Navigation](./navigation.md)
-- [HMI](./hmi.md)
-- [Control **(my work)**](./control/overview.md)
+1. Guidance
+2. Perception
+3. Navigation
+4. HMI
+5. Control **(my work)**
 
 ## Results
 You may view a video of the robot in action [on YouTube]().
