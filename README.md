@@ -27,7 +27,7 @@ The system consists of 5 modules that work together to realize the key features 
 You may view a video of the robot in action [on YouTube]().
 
 ## Hardware
-![The image file could not be loaded](./media/hardware-structure.png)
+![The image file could not be loaded](./robot_docs/media/hardware-structure.png)
 
 ## Getting Started
 ### Prerequisites
