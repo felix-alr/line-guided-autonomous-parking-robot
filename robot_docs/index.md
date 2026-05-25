@@ -13,7 +13,8 @@ The robot is able to
 Furthermore it can be controlled by means of an android application with a graphical user interface.
 
 ## Results
-You may view a video of the robot in action [on YouTube]().
+
+You may view a video of the robot in action on YouTube soon.
 
 ## System Architecture
 ![The image file could not be loaded.](./media/system-architecture.png)

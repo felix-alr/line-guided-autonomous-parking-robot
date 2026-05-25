@@ -24,7 +24,7 @@ The system consists of 5 modules that work together to realize the key features 
 5. Control **(my work)**
 
 ## Results
-You may view a video of the robot in action [on YouTube]().
+You may view a video of the robot in action on YouTube soon.
 
 ## Hardware
 ![The image file could not be loaded](./robot_docs/media/hardware-structure.png)
