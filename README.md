@@ -1,5 +1,8 @@
 # Line Guided Autonomous Parking Robot
 ## Overview
+![CircuitPython](https://img.shields.io/badge/CircuitPython-blue?style=flat-square)
+![TU Dresden](https://img.shields.io/badge/TU_Dresden-Main_Seminar_Automation_And_Control-green?style=flat-square)
+
 This project comprises multiple modules in order to achieve a functioning robot car that is able to navigate in a controlled manner as desired by the user.
 Developed as part of the [main seminar in automation and control technology](https://tu-dresden.de/ing/elektrotechnik/ifa/plt/studium/lehrveranstaltungen/hauptseminar-amr) at TU Dresden.
 
