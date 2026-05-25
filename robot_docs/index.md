@@ -29,7 +29,6 @@ The system consists of 5 modules that work together to realize the key features 
 ## Hardware
 ![The image file could not be loaded](./media/hardware-structure.png)
 
-
 ## Getting Started
 ### Prerequisites
 
@@ -37,15 +36,47 @@ The system consists of 5 modules that work together to realize the key features 
 - Pololu 3pi+ 2040 (including Bluetooth adapter for PC)
 - Optional: Android tablet for deployment of the HMI application
 
+**Important notice**
+
 ### Installation
+
+To install, please open the console in a directory of your choice and run the following commands.
 ```bash
 git clone https://github.com/felix-alr/line-guided-autonomous-parking-robot.git
 cd line-guided-autonomous-parking-robot
 ```
+Alternatively, you can download the project files right here on GitHub by clicking ```Code > Download ZIP``` and unpacking the file in your working directory.
 
-### Flash Pololu 3pi+ 2040
-**Ensure that ```mpremote```is installed using ```mpremote --version```. Else, install it using ```pip install mpremote```.
-Once installed you can continue flashing while in the ```robot_src``` folder by running the following command.
+### Setup
+To flash the project onto your Pololu 3pi+ 2040, please ensure that ```mpremote```is installed using ```mpremote --version``` or install it using ```pip install mpremote```.
+Once installed, you can continue flashing while in the ```robot_src``` directory.
+
+#### Flashing On Windows
+To flash on Windows, please run the download.bat file within the ```robot_src``` directory.
+The batch file will then load all project files onto your Pololu 3pi+ 2040.
+
+#### Flashing On Linux
+
+On Linux you may open the terminal in the ```robot_src``` directory and run the following command.
+
 ```bash
-mpremote ...
+mpremote connect [device] cp -r . :
 ```
+
+#### Deploying Android Application
+
+In order to deploy the application on an Android tablet using Android Studio, open the project located within ```hmi_src``` in Android Studio and follow the instructions on the official [Android website](https://developer.android.com/studio/run/device).
+
+### Running the program
+
+After flashing, you may reset the robot using its reset button. You can then connect to the robot via Blutooth on your PC using a Blutooth adapter and the Visual Studio Code console to send commands or alternatively using an android tablet with the HMI software which is located within ```hmi_src```.
+What follows is a list of commands that can be sent via Bluetooth in order to switch modes.
+
+- ```z``` &mdash; idle mode: robot does nothing.
+- ```r``` &mdash; setup mode: needs to be called first.
+- ```y``` &mdash; scout mode: lets the robot drive around the parkour to scout for parking spots.
+- ```1``` &mdash; makes the robot send over the current pose of the robot.
+- ```2``` &mdash; makes the robot send over the parking spots it detected.
+- ```3 #index``` &mdash; tells the robot to start parking in the parking spot at index ```#index``` in the list returned by ```2```.
+- ```4``` &mdash; allows you to send the robot target positions for the position controller.
+- ```q``` &mdash; external mode: allows you to control the robots speed manually using ```w``` increase, ```s``` to decrease forward speed and ```a``` to increase (left turn), ```d``` to decrease (right turn) angular speed.
