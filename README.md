@@ -1,6 +1,6 @@
 # Line Guided Autonomous Parking Robot
-![CircuitPython](https://img.shields.io/badge/CircuitPython-blue?style=flat-square)
-![TU Dresden](https://img.shields.io/badge/TU_Dresden-Main_Seminar_Automation_And_Control-green?style=flat-square)
+![CircuitPython](https://img.shields.io/badge/CircuitPython-blue)
+![TU Dresden](https://img.shields.io/badge/TU_Dresden-Main_Seminar_Automation_And_Control-green)
 
 ## Overview
 This project comprises multiple modules in order to achieve a functioning robot car that is able to navigate in a controlled manner as desired by the user.
